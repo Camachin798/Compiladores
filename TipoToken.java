@@ -1,12 +1,20 @@
 public enum TipoToken {
-    IDENTIFICADOR,
+    // Tokens de un sólo caracter
+    LEFT_PAREN, RIGHT_PAREN, LEFT_BRACE, RIGHT_BRACE,
+    COMMA, DOT, MINUS, PLUS, SEMICOLON, SLASH, STAR,
 
-    // Palabras reservadas
-    SELECT, FROM, DISTINCT,
+    // Tokens de uno o dos caracteres
+    BANG, BANG_EQUAL,
+    EQUAL, EQUAL_EQUAL,
+    GREATER, GREATER_EQUAL,
+    LESS, LESS_EQUAL,
 
-    // Caracteres
-    COMA, PUNTO, ASTERISCO,
+    // Literales
+    IDENTIFIER, STRING, NUMBER,
 
-    // Final de cadena
+    // Palabras clave
+    AND, ELSE, FALSE, FUN, FOR, IF, NULL, OR,
+    PRINT, RETURN, TRUE, VAR, WHILE,
+
     EOF
 }
